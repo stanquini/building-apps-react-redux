@@ -16,7 +16,7 @@
     },
     {
       "id": 3,
-      "title": "Creating Reusable React Components",
+      "title": "Creating Reusable React Components ddd",
       "slug": "react-creating-reusable-components",
       "authorId": 1,
       "category": "JavaScript"
@@ -77,6 +77,14 @@
       "createdAt": 1619300399894,
       "slug": "vuejs-vuex",
       "id": 11
+    },
+    {
+      "title": "Js",
+      "authorId": 1,
+      "category": "JS",
+      "createdAt": 1619443910178,
+      "slug": "js",
+      "id": 12
     }
   ],
   "authors": [
