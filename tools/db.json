@@ -16,7 +16,7 @@
     },
     {
       "id": 3,
-      "title": "Creating Reusable React Components ddd",
+      "title": "Creating Reusable React Components",
       "slug": "react-creating-reusable-components",
       "authorId": 1,
       "category": "JavaScript"
@@ -69,22 +69,6 @@
       "slug": "web-components-shadow-dom",
       "authorId": 1,
       "category": "HTML5"
-    },
-    {
-      "title": "VueJS + Vuex",
-      "authorId": 2,
-      "category": "Front-end",
-      "createdAt": 1619300399894,
-      "slug": "vuejs-vuex",
-      "id": 11
-    },
-    {
-      "title": "Js",
-      "authorId": 1,
-      "category": "JS",
-      "createdAt": 1619443910178,
-      "slug": "js",
-      "id": 12
     }
   ],
   "authors": [
