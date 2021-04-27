@@ -55,20 +55,6 @@
       "slug": "architecting-applications-dotnet",
       "authorId": 1,
       "category": "Software Architecture"
-    },
-    {
-      "id": 9,
-      "title": "Becoming an Outlier: Reprogramming the Developer Mind",
-      "slug": "career-reboot-for-developer-mind",
-      "authorId": 1,
-      "category": "Career"
-    },
-    {
-      "id": 10,
-      "title": "Web Component Fundamentals",
-      "slug": "web-components-shadow-dom",
-      "authorId": 1,
-      "category": "HTML5"
     }
   ],
   "authors": [
