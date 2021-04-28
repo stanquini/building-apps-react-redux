@@ -8,7 +8,7 @@ import { newCourse } from "../../../tools/mockData";
 import Spinner from "../common/Spinner";
 import { toast } from "react-toastify";
 
-function ManageCoursePage({
+export function ManageCoursePage({
   courses,
   authors,
   loadAuthors,
@@ -49,39 +49,41 @@ function ManageCoursePage({
     const { title, authorId, category } = course;
     const errors = {};
 
-    if(!title) errors.title = "Title is required";
-    if(!authorId) errors.author = "Author is required";
-    if(!category) errors.category = "Category is required";
+    if (!title) errors.title = "Title is required.";
+    if (!authorId) errors.author = "Author is required";
+    if (!category) errors.category = "Category is required";
 
     setErrors(errors);
-
+    // Form is valid if the errors object still has no properties
     return Object.keys(errors).length === 0;
   }
 
   function handleSave(event) {
     event.preventDefault();
-    if(!formIsValid()) return;
+    if (!formIsValid()) return;
     setSaving(true);
-    saveCourse(course).then(() => {
-      toast.success("Course saved.");
-      history.push("/courses");
-    }).catch(error => {
-      setSaving(false);
-      setErrors({ onSave: error.message });
-    });
+    saveCourse(course)
+      .then(() => {
+        toast.success("Course saved.");
+        history.push("/courses");
+      })
+      .catch(error => {
+        setSaving(false);
+        setErrors({ onSave: error.message });
+      });
   }
 
-  return (
-    authors.length === 0 || course.length === 0
-      ? (<Spinner />)
-      : (<CourseForm
+  return authors.length === 0 || courses.length === 0 ? (
+    <Spinner />
+  ) : (
+    <CourseForm
       course={course}
       errors={errors}
       authors={authors}
       onChange={handleChange}
       onSave={handleSave}
       saving={saving}
-    />)
+    />
   );
 }
 
